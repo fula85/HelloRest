@@ -15,6 +15,8 @@
 		79C2277722004DB3008C3C7F /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2277622004DB3008C3C7F /* UserPost.swift */; };
 		79C2277922004EF2008C3C7F /* PostParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2277822004EF2008C3C7F /* PostParser.swift */; };
 		79C2277C22007AC6008C3C7F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2277B22007AC6008C3C7F /* DetailViewController.swift */; };
+		79C2277E22009372008C3C7F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79C2277D22009372008C3C7F /* Settings.bundle */; };
+		79C227802200995F008C3C7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2277F2200995F008C3C7F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		79C2277622004DB3008C3C7F /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		79C2277822004EF2008C3C7F /* PostParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParser.swift; sourceTree = "<group>"; };
 		79C2277B22007AC6008C3C7F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		79C2277D22009372008C3C7F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		79C2277F2200995F008C3C7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				79C2276A22004A9B008C3C7F /* Assets.xcassets */,
 				79C2276C22004A9B008C3C7F /* LaunchScreen.storyboard */,
 				79C2276F22004A9B008C3C7F /* Info.plist */,
+				79C2277D22009372008C3C7F /* Settings.bundle */,
 			);
 			path = HelloRest;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 			children = (
 				79C2276522004A90008C3C7F /* ViewController.swift */,
 				79C2277B22007AC6008C3C7F /* DetailViewController.swift */,
+				79C2277F2200995F008C3C7F /* LoginViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C2277E22009372008C3C7F /* Settings.bundle in Resources */,
 				79C2276E22004A9B008C3C7F /* LaunchScreen.storyboard in Resources */,
 				79C2276B22004A9B008C3C7F /* Assets.xcassets in Resources */,
 				79C2276922004A90008C3C7F /* Main.storyboard in Resources */,
@@ -160,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C227802200995F008C3C7F /* LoginViewController.swift in Sources */,
 				79C2276622004A90008C3C7F /* ViewController.swift in Sources */,
 				79C2276422004A90008C3C7F /* AppDelegate.swift in Sources */,
 				79C2277C22007AC6008C3C7F /* DetailViewController.swift in Sources */,
