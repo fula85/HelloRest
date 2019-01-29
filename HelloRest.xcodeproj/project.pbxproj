@@ -12,6 +12,8 @@
 		79C2276922004A90008C3C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C2276722004A90008C3C7F /* Main.storyboard */; };
 		79C2276B22004A9B008C3C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C2276A22004A9B008C3C7F /* Assets.xcassets */; };
 		79C2276E22004A9B008C3C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C2276C22004A9B008C3C7F /* LaunchScreen.storyboard */; };
+		79C2277722004DB3008C3C7F /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2277622004DB3008C3C7F /* UserPost.swift */; };
+		79C2277922004EF2008C3C7F /* PostParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C2277822004EF2008C3C7F /* PostParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		79C2276A22004A9B008C3C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79C2276D22004A9B008C3C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C2276F22004A9B008C3C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79C2277622004DB3008C3C7F /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
+		79C2277822004EF2008C3C7F /* PostParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		79C2276222004A90008C3C7F /* HelloRest */ = {
 			isa = PBXGroup;
 			children = (
+				79C2277522004D80008C3C7F /* Model */,
 				79C2276322004A90008C3C7F /* AppDelegate.swift */,
 				79C2276522004A90008C3C7F /* ViewController.swift */,
 				79C2276722004A90008C3C7F /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				79C2276F22004A9B008C3C7F /* Info.plist */,
 			);
 			path = HelloRest;
+			sourceTree = "<group>";
+		};
+		79C2277522004D80008C3C7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79C2277622004DB3008C3C7F /* UserPost.swift */,
+				79C2277822004EF2008C3C7F /* PostParser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			files = (
 				79C2276622004A90008C3C7F /* ViewController.swift in Sources */,
 				79C2276422004A90008C3C7F /* AppDelegate.swift in Sources */,
+				79C2277922004EF2008C3C7F /* PostParser.swift in Sources */,
+				79C2277722004DB3008C3C7F /* UserPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.ehb.HelloRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.ehb.HelloRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
