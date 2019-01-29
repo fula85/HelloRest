@@ -42,5 +42,22 @@ class PostParser{
         return posts
     }
 
+    static func userById(userId:Int) -> String {
+        
+        let url = URL(string: "https://jsonplaceholder.typicode.com/users/\(userId)")!
+        
+        do{
+           let data = try Data(contentsOf: url)
+           let jsonObject = try JSONSerialization.jsonObject(with: data) as! NSObject
+            
+            let username = jsonObject.value(forKey: "username") as! String
+            return username
+        }catch{
+            return "404 Not Found"
+            
+        }
+        
+    }
+    
 }
 

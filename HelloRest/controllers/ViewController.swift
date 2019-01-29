@@ -12,12 +12,27 @@ class ViewController: UIViewController {
     
     
     var items = [UserPost].init()
-
+    @IBOutlet weak var tableview: UITableView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         items = PostParser.getAllPosts()
-       print(PostParser.getAllPosts())
+      
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! DetailViewController
+        
+        let touchedcell = sender as! UITableViewCell
+        let indexpath = tableview.indexPath(for: touchedcell)!
+        
+        let gekozenPost = items[indexpath.row]
+        destination.post = gekozenPost
+        
+    }
+    
 }
 
 extension ViewController:UITableViewDataSource{
